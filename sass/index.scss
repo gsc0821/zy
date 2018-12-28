@@ -1,0 +1,190 @@
+@import "_minix.scss";
+@import "common.scss";
+.wrap {
+    height: 100%;
+    width: 100%;
+    @include box_flex;
+    @include direction(column);
+    // overflow: hidden;
+}
+
+header {
+    height: pxTorem(44px);
+    width: 100%;
+    @include box_flex;
+    @include align;
+    @include justify(space-between);
+    padding: 0 pxTorem(20px);
+    @include sizing;
+    background: #1B1A1F;
+    color: #fff;
+    font-size: pxTorem(16px);
+    p:nth-child(1) {
+        span:nth-child(1) {
+            margin-right: pxTorem(9px);
+        }
+    }
+    img {
+        height: pcTorem(20px);
+        width: pxTorem(44px);
+    }
+}
+
+section {
+    @include flex;
+    width: 100%;
+    overflow-y: auto;
+    .peisong {
+        background: #333333;
+        height: pxTorem(44px);
+        @include box_flex;
+        @include align;
+        font-size: pxTorem(20px);
+        color: #fff;
+        dd {
+            img {
+                height: pxTorem(25px);
+                width: pxTorem(20px);
+                margin-left: pxTorem(20px);
+                margin-right: pxTorem(8px);
+            }
+        }
+        dt {
+            line-height: pxTorem(44px);
+        }
+    }
+    .dianpu {
+        // background: pink;
+        height: pxTorem(120px);
+        width: 100%;
+        @include box_flex;
+        padding: 0 pxTorem(20px);
+        @include sizing;
+        @include align;
+        @include justify;
+        >img {
+            height: pxTorem(80px);
+            width: pxTorem(80px);
+        }
+        >div {
+            margin: 0 pxTorem(8px);
+            height: pxTorem(80px);
+            @include flex;
+            p:nth-child(1) {
+                font-size: pxTorem(18px);
+                span {
+                    color: #F2922F;
+                }
+            }
+            p:nth-child(2) {
+                font-size: pxTorem(16px);
+                margin-top: pxTorem(4px);
+                span:nth-child(1) {
+                    background: #F5FDFC;
+                    border: 1px solid#5ADAD0;
+                    color: #5ADAD0;
+                    padding: pxTorem(2px);
+                    margin-right: pxTorem(6px);
+                }
+                span:nth-child(2) {
+                    color: #999;
+                }
+            }
+        }
+        >dl {
+            text-align: center;
+            font-size: pxTorem(15px);
+            dd {
+                img {
+                    height: pxTorem(30px);
+                    width: pxTorem(30px);
+                }
+            }
+        }
+    }
+    .swiper-container {
+        height: pxTorem(180px);
+        width: 100%;
+        overflow: hidden;
+        .swiper-wrapper {
+            height: 100%;
+            width: 100%;
+            .swiper-slide {
+                width: 100%;
+                height: 100%;
+                img {
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .table {
+        height: pxTorem(65px);
+        width: 100%;
+        @include box_flex;
+        @include justify(space-around);
+        @include align;
+        font-size: pxTorem(22px);
+        // background: pink;
+        p {
+            height: pxTorem(65px);
+            width: 25%;
+            line-height: pxTorem(65px);
+            text-align: center;
+        }
+        .p {
+            color: #F2922F;
+            border-bottom: pxTorem(2px) solid #F2922F;
+        }
+    }
+    .list {
+        width: 100%;
+        div {
+            width: 100%;
+            @include box_flex;
+            @include flexWrap(wrap);
+            dl {
+                text-align: center;
+                width: 50%;
+                height: pxTorem(300px);
+                border: pxTorem(1px) solid #eee;
+                // background: #5ADAD0;
+                // padding: 0 pxTorem(10px);
+                @include sizing;
+                dd {
+                    // text-align: center;
+                    margin-top: pxTorem(10px);
+                    img {
+                        height: pxTorem(180px);
+                        width: pxTorem(180px);
+                    }
+                }
+                dt {
+                    font-size: pxTorem(18px);
+                }
+            }
+        }
+    }
+}
+
+footer {
+    height: pxTorem(50px);
+    width: 100%;
+    @include box_flex;
+    @include justify(space-around);
+    @include align;
+    font-size: pxTorem(12px);
+    dl {
+        text-align: center;
+        dd {
+            @include box_flex;
+            @include align;
+            @include justify;
+            img {
+                height: pxTorem(25px);
+                width: pxTorem(30px);
+            }
+        }
+    }
+}

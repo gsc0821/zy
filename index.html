@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/swiper-4.1.6.min.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <header>
+            <p><span><</span><span>返回</span></p>
+            <p>喵掌柜杂货铺</p>
+            <img src="img/shenglue.png" alt="">
+        </header>
+        <section>
+            <dl class="peisong">
+                <dd><img src="img/weizhi.png" alt=""></dd>
+                <dt>请选择配送地址</dt>
+            </dl>
+            <div class="dianpu">
+                <img src="img/logo.png" alt="">
+                <div>
+                    <p>喵掌柜杂货店<span>(已打烊)</span></p>
+                    <p><span>包邮</span><span>满49包邮</span></p>
+                </div>
+                <dl>
+                    <dd><img src="img/xin.png" alt=""></dd>
+                    <dt>点击关注</dt>
+                </dl>
+            </div>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="img/banner.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/banner.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/banner.png" alt="">
+                    </div>
+
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+            <div class="table">
+                <p class="p">热卖商品</p>
+                <p>店家推荐</p>
+                <p>跳楼促销</p>
+            </div>
+            <div class="list">
+                <div>
+                    <dl>
+                        <dd><img src="img/1.png" alt=""></dd>
+                        <dt>猫掌柜梅花软糖包邮糖果混合口味喜</dt>
+                    </dl>
+                    <dl>
+                        <dd><img src="img/2.png" alt=""></dd>
+                        <dt>猫掌柜梅花软糖包邮糖果混合口味喜</dt>
+                    </dl>
+                    <dl>
+                        <dd><img src="img/3.png" alt=""></dd>
+                        <dt>猫掌柜梅花软糖包邮糖果混合口味喜</dt>
+                    </dl>
+                    <dl>
+                        <dd><img src="img/4.png" alt=""></dd>
+                        <dt>猫掌柜梅花软糖包邮糖果混合口味喜</dt>
+                    </dl>
+                </div>
+            </div>
+
+
+        </section>
+        <footer>
+            <dl>
+                <dd><img src="img/shouye.png" alt=""></dd>
+                <dt style="color:#F2922F">首页</dt>
+            </dl>
+            <dl>
+                <dd><img src="img/gouwuche.png" alt=""></dd>
+                <dt>购物车</dt>
+            </dl>
+            <dl>
+                <dd><img src="img/wode.png" alt=""></dd>
+                <dt>我的</dt>
+            </dl>
+        </footer>
+    </div>
+    <script src="js/swiper-4.1.6.min.js"></script>
+    <script>
+        var mySwiper = new Swiper('.swiper-container', {
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            loop: true,
+            autoPlay: true
+        })
+    </script>
+</body>
+
+</html>
